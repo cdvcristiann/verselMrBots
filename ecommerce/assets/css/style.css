@@ -1,0 +1,236 @@
+:root {
+    --raleway: 'raleway';
+    --background-blanco: #F5F5F5;
+    --fuente-barra: #A2A2A2;
+    --fuente-banner: #FFFFFF;
+    --fuente-productos: #464646;
+    --fuente-productos-azul: #2A7AE4;
+}
+
+body {
+    font-family: 'raleway';
+    font-weight: 700;
+    box-sizing: border-box;
+    /* background-color: #f4f4f7; */
+    /* background-color: red; */
+    
+    
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contenedor {
+    width: 85%;
+    /* max-width: 120rem; */
+    margin: auto;
+    overflow: hidden;
+}
+.cabecera_container {
+    width: 100%;
+    /* height: 8vh; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: .85rem;
+    padding-bottom: .85rem;
+}
+
+/* .cabecera_logo {
+    width: 9.3rem;
+    padding: 2rem;
+} */
+.logo_container {
+    width: 5rem;
+    height: 5rem;
+}
+.logo_container img {
+    width: 100%;
+    height: 100%;
+}
+.busqueda {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 30%;
+}
+
+.busqueda img:hover {
+    color: #fff;
+    cursor: pointer;
+    /* border: 1px solid #fff; */
+    /* transform: scale(1.9); */
+    /* transition: all 0.7s; */
+}
+
+.busqueda_campo {
+    padding: .75rem 1rem;
+    border-radius: 1.25rem;
+    width: 21.8rem;
+    border: none;
+    background-color: var(--background-blanco);
+}
+
+.busqueda_campo:focus {
+    outline: none;
+}
+
+.login {
+    width: 9rem;
+    height: 2.5rem;
+    font-size: 16px;
+    color: var(--fuente-productos-azul);
+    background-color: white;
+    border: 2px solid var(--fuente-productos-azul);
+}
+
+.login:hover {
+    background: #2a7ae4;
+    color: #fff;
+    cursor: pointer;
+    border: 1px solid #fff;
+    transform: scale(1.1);
+    transition: all 0.7s;
+}
+
+.contenido_container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    background-image: url(../img/banner.png);
+    background-size: cover;
+    /* background-position: center center; */
+    object-fit: cover;
+    /* position: static; */
+    justify-content: center;
+}
+
+.texto h1 {
+    font-weight: 700;
+    font-size: 60px;
+    color: var(--fuente-banner);
+    margin-top: 80px;
+    margin-left: 120px;
+    margin-bottom: 30px;
+    text-align: left;
+    transition: .6s ease-out;
+    opacity: 0;
+    transform: translateX(50%);
+}
+.texto h1.active {
+    transform: translateX(0%);
+    opacity: 1;
+}
+.texto p {
+    font-weight: 400;
+    font-size: 20px;
+    color: var(--fuente-banner);
+    margin-left: 7.5rem;
+    margin-bottom: 1.25rem;
+    text-align: left;
+    transform: translateX(50%);
+    opacity: 0;
+    transition: .8s ease-out;
+}
+.texto p.active {
+    transform: translateX(0%);
+    opacity: 1;
+}
+.texto a {
+    opacity: 0;
+    transform: translateY(1re);
+    transition: .4s ease-out;
+}
+
+.texto a.active {
+    opacity: 1;
+    transform: translateX(0%);
+}
+.consolas {
+    /* width: 7.5rem;
+    height: 3.1rem; */
+    font-size: 0.9rem;
+    font-weight: 400;
+    background-color: var(--fuente-productos-azul);
+    color: white;
+    margin-left: 7.5rem;
+    margin-bottom: 1.5rem;
+    text-align: left;
+    border: none;
+    padding: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.7s;
+}
+
+.consolas:hover {
+    background: #fff;
+    color: #2a7ae4;
+    cursor: pointer;
+    transform: scale(1.1);
+    
+}
+
+.button-busqueda {
+    margin-left: -50px;
+    border: none;
+    opacity: 50;
+    background-color: var(--background-blanco)
+}
+
+.button-busqueda-login {
+    display: none;
+}
+
+@media (min-width:320px) and (max-width:768px) {
+    .busqueda {
+        margin-right: 10%;
+    }
+    .busqueda_campo {
+        display: none;
+    }
+    .texto h1 {
+        font-size: 22px;
+        margin-left: 1rem;
+    }
+    .texto p {
+        font-size: 0.8rem;
+        margin-left: 1rem;
+    }
+    .login {
+        width: 6rem;
+    }
+    .consolas {
+        margin-left: 1rem;
+        width: 7rem;
+        height: 2rem;
+        font-size: 14px;
+        text-align: center;
+    }
+    .button-busqueda {
+        display: none;
+    }
+    .button-busqueda-login {
+        display: inline;
+        background-color: white;
+        border: none;
+        margin-left: 0.62rem;
+    }
+    .cabecera_container {
+        width: 90%;
+        padding-right: 2.5rem;
+    }
+    .cabecera_logo {
+        width: 7.5rem;
+    }
+}

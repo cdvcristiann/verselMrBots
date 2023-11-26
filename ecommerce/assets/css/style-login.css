@@ -1,0 +1,117 @@
+:root {
+    --background-blanco: #F5F5F5;
+    --fuente-placeholder: #464646;
+    ;
+    --fuente-productos-azul: #2A7AE4;
+}
+
+.categoria {
+    padding-left: 29%;
+    background: var(--background-blanco);
+}
+
+.container-login {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.container-login h2 {
+    width: 320px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 21px;
+    color: var (--fuente-placeholder);
+    margin-bottom: 18px;
+}
+
+.form-control {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-control input {
+    width: 26rem;
+    height: 3rem;
+    background: #FFFFFF;
+    border-radius: 4px;
+    align-self: stretch;
+    flex-grow: 1;
+    margin: 8px 0px;
+    border: none;
+    margin-bottom: 20px;
+}
+
+.form-control input::placeholder {
+    font-family: 'Raleway';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #A2A2A2;
+    padding-left: 8px;
+}
+
+.form-control button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 16px;
+    width: 26rem;
+    height: 3rem;
+    background: var(--fuente-productos-azul);
+    color: #fff;
+    border: none;
+    font-size: 18px;
+}
+
+.form-control button:hover {
+    background: #fff;
+    color: #2a7ae4;
+    cursor: pointer;
+    border: 1px solid #2a7ae4;
+    transform: scale(1.1);
+    transition: all 0.7s;
+}
+
+@media (min-width:320px) and (max-width: 768px) {
+    .container-login h2 {
+        width: 10rem;
+        padding-left: 2rem;
+    }
+    .form-control {
+        text-align: center;
+        width: 0;
+        display: block;
+        flex-direction: column;
+    }
+    div.container-login {
+        width: auto;
+        text-align: center;
+        padding: 6.5rem;
+    }
+    .form-control input {
+        margin-left: 0;
+        width: 13.5rem;
+        height: 1.8rem;
+    }
+    .form-control button {
+        width: 6.5rem;
+        height: 2.5rem;
+        margin-left: 3.5rem;
+    }
+    h2.contact-title {
+        font-weight: bold;
+        font-size: 1.1rem;
+    }
+    div.logo-acerca-de {
+        height: 20rem;
+    }
+    div.footer {
+        padding: 0%;
+    }
+}

@@ -1,0 +1,153 @@
+.drop-area {
+    border: 5px dashed #ddd;
+    width: 230%;
+    height: 50%;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.drop-area .active {
+    background-color: #b8d4fe;
+    color: black;
+    border: 2px dashed #618ac9;
+}
+
+.drop-area h2 {
+    font-size: 0.1rem;
+    font-weight: 500;
+    color: #000;
+}
+
+#hdos {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #000;
+    text-align: center;
+    align-items: center;
+    justify-content: center
+}
+
+.drop-area span {
+    font-size: 0.8px;
+    font-weight: 500;
+    color: #000;
+}
+
+#btn {
+    width: 40%;
+    padding: 10px 25px;
+    font-size: 10px;
+    border: 0;
+    outline: none;
+    background-color: #5256ad;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px;
+}
+
+#btn:hover {
+    background: #fff;
+    color: #2a7ae4;
+    cursor: pointer;
+    border: 1px solid #2a7ae4;
+    transform: scale(1.1);
+    transition: all 0.7s;
+}
+
+
+/*se crea en js cuando se agrega la magen*/
+
+.file-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+div.status {
+    display: flex;
+    justify-content: space-between;
+}
+
+.status span {
+    flex: none;
+    padding: 0.5rem;
+}
+
+#preview {
+    margin-top: 10px;
+}
+
+.status-text {
+    padding: 0 10px;
+}
+
+.success {
+    color: #52ad5a;
+}
+
+.failure {
+    color: #ff0000;
+}
+
+.container-login.center {
+    padding: 2rem;
+}
+
+.form-control textarea {
+    width: 235%;
+    background: #FFFFFF;
+    border-radius: 4px;
+    align-self: stretch;
+    flex-grow: 1;
+    margin: 8px 0px;
+    border: none;
+    margin-bottom: 20px;
+    padding: 2rem;
+}
+
+.form-control textarea::placeholder {
+    font-family: 'Raleway';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #A2A2A2;
+    padding-left: 8px;
+}
+
+.form-control input {
+    width: 300%;
+    background: #FFFFFF;
+    border-radius: 4px;
+    align-self: stretch;
+    flex-grow: 1;
+    margin: 8px 0px;
+    border: none;
+    margin-bottom: 20px;
+}
+
+.form-control input::placeholder {
+    font-family: 'Raleway';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #A2A2A2;
+    padding-left: 8px;
+}
+
+@media (min-width:320px) and (max-width:768px) {
+    .drop-area {
+        width: 45vh;
+        height: 25vh;
+    }
+    .categoria {
+        padding-left: 100%;
+    }
+    .container-login h2 {
+        padding-left: 9rem;
+    }
+}

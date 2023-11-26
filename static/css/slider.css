@@ -1,0 +1,311 @@
+/* ------------------- ESTILOS PARA EL SLIDER ---------------------- */
+.slider {
+    margin-top: 1rem;
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+    /* background: var(--dark); */
+}
+@media (min-width: 768px) {
+    .slider {
+        margin: 0;
+    }
+}
+.slider__container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    transition: 600ms ease-in-out;
+    
+}
+
+.slider__items {
+    width: 100%;
+    height: 100%;
+    flex: 1 0 100%;
+    overflow: hidden;
+}
+
+.slider__items .contenedor {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+/* slider uno */
+.contenedor .info {
+    display: none;
+    height: 40rem;
+}
+@media (min-width: 768px) {
+    .contenedor .info {
+        width: 150rem;
+        display: block;
+    }
+}
+
+.contenedor .info .slider__title {
+    color: var(--colorMrBots);
+    opacity: .1;
+    transform: translateX(-100%);
+    transition: all 300ms ease-in-out;
+    padding: .3rem;
+    border-radius: .3rem;
+}
+.info .slider__title:hover {
+    background-color: var(--colorMrBots);
+    display: inline-block;
+    color: var(--colorBlanco);
+}
+.contenedor .info .slider__title.title_one.active {
+    transform: translateX(0%);
+    opacity: .9;
+    display: inline-block;
+}
+
+.contenedor .info .slider__title.title_two.active {
+    transform: translateX(0%);
+    opacity: .9;
+    display: inline-block;
+}
+.contenedor .info .silder__subtitle {
+    color: var(--colorBlanco);
+    opacity: .1;
+    transform: translateX(-100%);
+    transition: all 400ms ease-in-out;
+}
+
+.contenedor .info .silder__subtitle.active {
+    transform: translateX(0%);
+    opacity: .7;
+}
+.info__wallpaper {
+    transform: translateX(100%);
+    transition: 800ms ease-out;
+    opacity: 0;
+}
+.info__wallpaper.transport {
+    transform: translateX(0%);
+    opacity: 1;
+}
+.contenedor .info__wallpaper img {
+    object-fit: cover;
+    object-position: center;
+    border-radius: .5rem;
+    transition: 600ms ease-in-out;
+}
+.contenedor .info p {
+    color: var(--colorBlanco);
+    font-size: 1.7rem;
+}
+
+.contenedor .info p:hover {
+    background-color: var(--colorMrBots);
+}
+.info__wallpaper img.active {
+    transform: translateY(1.5rem);
+}
+
+.button-video {
+    margin-top: 2rem;
+}
+
+.button-video a {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: var(--colorMrBots);
+    color: var(--colorBlanco);
+    border-radius: 2rem;
+    opacity: 0;
+    transition: .5s ease-in-out;
+}
+.button-video a.active {
+    opacity: 1;
+}
+
+/* Slider dos */
+.services {
+    display: grid;
+    height: 40rem;
+}
+
+@media (min-width: 768px) {
+    .services {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.services__text h3 {
+    transition: all 400ms ease-in-out;
+    transform: translateX(150%);
+    color: var(--colorMrBots);
+    display: inline-block;
+}
+.services__text h3:hover {
+    color: var(--colorBlanco);
+    background-color: var(--colorMrBots);
+}
+.services__text h3.active {
+    transform: translateX(0%);
+}
+.services__text p {
+    font-size: 1.7rem;
+    color: var(--colorBlanco);
+}
+.list__services {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+}
+.list__services a {
+    width: 30rem;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    color: var(--colorBlanco);
+    background-color: var(--dark);
+    margin-bottom: 1rem;
+    text-align: center;
+    transform: rotateY(90deg);
+    transition: .6s ease-out;
+    position: relative;
+    /* overflow: hidden; */
+    position: relative;
+}
+
+.list__services a:hover {
+    background: var(--colorMrBots);
+}
+.list__services a.active {
+    transform: rotateY(0deg);
+}
+.list__services a.serv {
+    background: var(--degradado);
+}
+.uno:hover .ques-1  {
+    display: block;
+}
+.dos:hover .ques-2  {
+    display: block;
+}
+.tres:hover .ques-3  {
+    display: block;
+}
+.cuatro:hover .ques-4  {
+    display: block;
+}
+.cinco:hover .ques-5  {
+    display: block;
+}
+.seis:hover .ques-6  {
+    display: block;
+}
+.ques-1,
+.ques-2,
+.ques-3,
+.ques-4,
+.ques-5,
+.ques-6 {
+    display: none;
+    width: 100%;
+    background-color: var(--colorMrBots);
+    color: var(--colorBlanco);
+    position: absolute;
+    top: -5rem;
+    left: 0;
+    z-index: 999;
+    border-radius: .5rem;
+    padding: .4rem;
+}
+.services__wallpaper {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .services__wallpaper {
+        display: block;
+    }
+}
+.services__wallpaper img {
+    transform: scale(0.7);
+    transition: 4s ease-in-out;
+
+}
+
+.services__wallpaper img.active {
+    transform: scale(1)
+}
+
+.button-proyectos a {
+    display: inline-block;
+    padding: 1rem 2rem;
+    opacity: 0;
+    background-color: var(--colorMrBots);
+    color: var(--colorBlanco);
+    border-radius: 2rem;
+    transition: .5s ease-in-out;
+}
+
+.button-proyectos a.active {
+    opacity: 1;
+}
+
+.buttons-container {
+    display: flex;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+}
+@media (min-width: 480px) {
+    .buttons-container {
+        bottom: 2rem;
+    }
+}
+.buttons__items {
+    width: 4rem;
+    height: .8rem;
+    position: relative;
+    margin-right: 1rem;
+    cursor: pointer;
+    overflow: hidden;
+    background-color: var( --blancoOpacity);
+    transition: .3s ease-in-out;
+    border-radius: 1rem;
+}
+
+#button1::after,
+#button2::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: var(--colorMrBots);
+    border-radius: 1rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: .8s ease-in-out;
+}
+
+#button1::after {
+    transform: translateX(200%);
+}
+#button1.active::after {
+    transform: translateX(0%);
+}
+#button1.active {
+    width: 5rem;
+}
+
+#button2::after {
+    transform: translateX(-100%);
+}
+#button2.active::after {
+    transform: translateX(0%);
+}
+#button2.active {
+    width: 5rem;
+}

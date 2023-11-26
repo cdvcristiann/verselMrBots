@@ -1,0 +1,104 @@
+/* ================= ESTILOS PARA EL ICONO DEL WHATSAPPP  ==================*/
+.whatsapp-contact {
+    position: fixed;
+    top: 70%;
+    left: 15px;
+    transform: translateY(-70%);
+    background-color: var(--colorBlanco);
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+    border-bottom-left-radius: .4rem;
+    border-bottom-right-radius: .4rem;
+    /* z-index: 9; */
+    opacity: 0;
+    transition: .3s ease-in-out;
+
+}
+.whatsapp-contact.active {
+    opacity: 1;
+}
+.container-message {
+    width: 30rem;
+    height: 20rem;
+}
+
+.header-message {
+    background-color: var(--dark);
+    padding: .5rem;
+    display: flex;
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+    position: relative;
+}
+.header-message.dark {
+    background: var(--degradado);
+}
+.name_company-contact {
+    margin-left: 1rem;
+}
+.name_company-contact >  h4{
+    color: var(--colorBlanco);
+    opacity: .8;
+}
+.name_company-contact span {
+    color: var(--colorBlanco);
+    opacity: .6;
+}
+.close_whatsapp {
+    top: 5px;
+    right: 10px;
+    position: absolute;
+    color: var(--colorBlanco);
+    cursor: pointer;
+}
+.icon_company {
+    width: 4rem;
+    height: 4rem;
+    margin-left: 1rem;
+}
+
+.icon_company img {
+    width: 100%;
+    height: 100%;
+}
+
+.message {
+    background-color: #53a653;
+    width: 80%;
+    color: var(--colorBlanco);
+    margin: 1rem 2rem;
+    border-radius: .5rem;
+    padding: 1rem;
+}
+
+.btn-whatsapp {
+    display: inline-block;
+    padding: 1rem 2rem;
+    color: var(--colorBlanco);
+    background-color: var(--dark);
+    border-radius: .4rem;
+    margin-top: 2rem;
+    margin-left: 2rem;
+}
+.btn-whatsapp.dark {
+    background: var(--degradado);
+}
+.whatsapp__icon-container {
+    width: 5rem;
+    height: 5rem;
+    position: fixed;
+    top: 90%;
+    left: 20px;
+    transform: translateY(-90%);
+    z-index: 999;
+}
+.whatsapp__icon-container img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    transition: .3s ease-in;
+}
+
+.whatsapp__icon-container:hover img {
+    transform: scale(1.1);
+}

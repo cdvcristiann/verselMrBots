@@ -1,0 +1,214 @@
+:root {
+    --cardWidth: 11rem;
+    --cardHeight: 15.5rem;
+    --cardMargin: 0.62rem;
+}
+
+.categoria {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1.25rem;
+    /* position: relative; */
+}
+
+.texto-categoria {
+    width: 100%;
+    /* height: 2.37rem; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.texto-categoria h2 {
+    font-size: 32px;
+    margin: 1rem 0;
+}
+
+.texto-categoria img {
+    width: 16px;
+    height: 16px;
+    /* padding-right: 3.75rem; */
+}
+
+.texto-categoria a {
+    margin-top: 10px;
+    font-size: 16px;
+    position: absolute;
+    right: 0;
+    color: var(--fuente-productos-azul)
+}
+
+.productos {
+    width: 100%;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+}
+@media (min-width: 480px) {
+    .productos {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media (min-width: 768px) {
+    .productos {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+@media (min-width: 1024px) {
+    .productos {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+.card {
+    width: 90%;
+    /* height: var(--cardHeight); */
+    margin: var(--cardMargin);
+    transition: .3s ease-in;
+    cursor: pointer;
+    transform: translateY(30%);    
+}
+.card2 {
+    width: 90%;
+    /* height: var(--cardHeight); */
+    margin: var(--cardMargin);
+    transition: .3s ease-in;
+    cursor: pointer;
+}
+.card2:hover {
+    transform: scale(1.1);
+    background-color: #fff;
+    box-shadow: 0px 5px 10px 1px rgba(0,0,0,.16);
+}
+.card.active {
+    transform: translateY(0%);
+}
+.card:hover {
+    transform: scale(1.1);
+    background-color: #fff;
+    box-shadow: 0px 5px 10px 1px rgba(0,0,0,.16);
+    /* background-color: #D6E4F3; */
+}
+.card-img {
+    width: 100%;
+    height: 8rem;
+}
+.card-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.card h3,
+.card2 h3 {
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--fuente-productos);
+    margin-left: .5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.card p,
+.card2 p {
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--fuente-productos);
+    margin-left: .5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.btn-product {
+    display: block;
+    text-align: center;
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--fuente-productos-azul);
+    margin-top: 1.3rem;
+    color: #fff;
+    background-color: #3B61A7;
+    padding: .5rem;
+    border-radius: .1rem;
+}
+
+.producto-item .producto-item__icon {
+    background-color: var(--fuente-productos-azul);
+    color: white;
+    margin: 0.1rem;
+    border: none;
+    padding: 0.5rem;
+    transition: all 0.5s;
+}
+
+ul.producto-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.producto-item .producto-item__icon-eliminar {
+    background-color: rgb(193, 38, 38);
+    color: white;
+    margin: 0.1rem;
+    border: none;
+    padding: 0.5rem;
+    transition: all 0.5s;
+}
+
+.producto-item .producto-item__icon:hover {
+    background: #fff;
+    color: #2a7ae4;
+    cursor: pointer;
+    border: 1px solid #2a7ae4;
+    transform: scale(1.1);
+    transition: all 0.7s;
+}
+
+.producto-item .producto-item__icon-eliminar:hover {
+    background: #fff;
+    color: rgb(193, 38, 38);
+    cursor: pointer;
+    border: 1px solid rgb(193, 38, 38);
+    transform: scale(1.1);
+    transition: all 0.7s;
+}
+.all_producto {
+    font-size: 2rem;
+    margin: 4rem 0;
+}
+@media (min-width:320px) and (max-width:768px) {
+    /* .card {
+        width: 9.5rem;
+        height: 14.8rem;
+    }
+    .card img {
+        width: 8.75rem;
+        height: 9.62rem;
+    } */
+    .card a {
+        font-size: 14px;
+        margin-top: 0.31rem;
+        margin-bottom: 0.31rem;
+    }
+    .texto-categoria h2 {
+        padding-left: 0.25rem;
+    }
+    .login {
+        margin-right: 7px;
+    }
+    .texto-categoria img {
+        width: 16px;
+        height: 16px;
+        padding-right: 0px;
+    }
+}
+
+.barra-separadora {
+    height: 1px;
+    /* opacity: .8; */
+    margin: 2rem 0;
+    background-color: rgb(0 0 0 / 50%);
+}

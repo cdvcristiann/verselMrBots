@@ -1,0 +1,123 @@
+/* Fuente de google font */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+/* Paleta de colores y fuente */
+:root {
+    /* Fuente principal */
+    --fuentePrincipal: 'Open Sans', sans-serif;
+    --fuenteSecundaria: 'Kdam Thmor Pro', sans-serif;
+
+    /* Colores principales */
+    --colorNegro: #000;
+    --colorBlanco: #FFF;
+    --colorBlancoClaro: rgb(255 255 255 / 80%);
+    --negroDark: #343a40;
+    --dark: #343D5B;
+    --grisDark: #343a40;
+    --negroNaranjaOb: #9F650B;
+    --colorBlaco-Oscuro: #F4F4F4;
+    --colorTukersa: #5CC6D0;
+    --colorGrisFondo: #848688;
+    --colorSearch: #845EC2;
+    --colorRadio: #40D3DC;
+    --colorMrBots: #12d0eb;
+    --negroOpacity: rgb(0 0 0 / 80%);
+    --blancoOpacity: rgb( 255 255 255 / 25%);
+    --degradado: linear-gradient(to right, #845ec2, #5781e0, #009fef, #00b9f1, #12d0eb);
+    --sombreado: 0 5px 10px rgb( 0 0 0 / 0.25);
+
+     /*Colores de los iconos redes sociales*/
+     --colorFacebook: #3B5998;
+     --colorLinkedin: #0E76a8;
+     --colorInstagram: #3F729B;
+     --colorTwitter: #00ACEE;
+     --colorWhatsapp: #25D366;
+     --colorWhatsappMedio: #23b157;
+     --colorWhatsappOscuro: #0A5f54;
+}
+
+
+
+/* Estilos generales */
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+    box-sizing: border-box;
+    
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-size: 1.6rem;
+    font-family: var(--fuentePrincipal);
+    background: var(--degradado);
+    
+    /* transition: .3s ease all; */
+}
+body.dark {
+    background: var(--dark);
+}
+
+a {
+    color: var(--colorNegro);
+    text-decoration: none;
+    display: block;
+    margin: 0;
+}
+
+
+h1 {
+    font-size: 4rem;
+}
+h2 {
+    font-size: 3.4rem;
+}
+h3 {
+    font-size: 2.8rem;
+}
+h1, h2, h3, h4 {
+    margin: 0;
+}
+li {
+    list-style: none;
+}
+img {
+    width: 100%;
+}
+
+
+/* Clases para no repetir tanto codigo */
+.contenedor {
+    width: 90%;
+    max-width: 120rem;
+    margin: auto;
+}
+
+#particles-js {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: -1;
+}
+.fondo-negro {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgb(0 0 0 / 100%);
+}
+.slider .contenedor {
+    margin-top: 1rem;
+    width: 100%;
+    height: 48rem;
+}
+
+.slider .contenedor  > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}

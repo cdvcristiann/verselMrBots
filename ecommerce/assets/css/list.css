@@ -1,0 +1,37 @@
+.card {
+    padding-bottom: 20rem;
+    margin: 0.58rem;
+}
+
+.contenido_container {
+    width: 95%;
+}
+
+.agregar-producto {
+    border: solid #2A7AE4 1px;
+    align-self: flex-start;
+    background: #2a7ae4;
+    color: #fff;
+    width: 144px;
+    height: 40px;
+    transition: all 0.5s;
+}
+
+.agregar-producto:hover {
+    background: #fff;
+    color: #2a7ae4;
+    cursor: pointer;
+    border: 1px solid #2a7ae4;
+    transform: scale(1.1);
+    transition: all 0.7s;
+}
+
+@media (min-width:320px) and (max-width: 768px) {
+    .texto-categoria {
+        padding-bottom: 2rem;
+    }
+    .card {
+        padding-bottom: 20rem;
+        margin: -0.2rem;
+    }
+}

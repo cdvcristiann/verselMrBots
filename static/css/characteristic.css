@@ -1,0 +1,57 @@
+/* ============== ESTILOS DE LAS CARACTERISTICAS ================= */
+.characteristic {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+@media (min-width: 768px) {
+    .characteristic {
+        height: 100vh;
+
+    }
+}
+.characteristic h2 {
+    /* margin-top: 2rem; */
+    color: var(--colorBlanco);
+    text-align: center;
+    margin-bottom: 4rem;
+    opacity: .8;
+    font-weight: 400;
+}
+.characteristic__list {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    align-items: center;
+}
+@media (min-width: 768px) {
+    .characteristic__list {
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+.character__item {
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--colorBlanco);
+    border-radius: .4rem;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+}
+.character__item:hover {
+    transform: scale(1.1);
+}
+.character__item-img img {
+    width: 10rem;
+}
+
+.character__item-text h4 {
+    /* color: var(--colorMrBots); */
+    opacity: .8;
+}
+
+.character__item-text  p {
+    opacity: .7;
+}

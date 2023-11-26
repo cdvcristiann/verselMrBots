@@ -1,0 +1,11 @@
+.footer {
+    height: 3rem;
+    font-size: 16px;
+    padding: 2rem;
+}
+
+.footer-texto {
+    text-align: center;
+}
+
+@media (min-width:320px) and (max-width: 768px) {}

@@ -1,0 +1,115 @@
+/* ================ ESTILOS PARA LA SECCION DE LAS MEBRESIAS */
+.memberships {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media(min-width: 768px) {
+    .memberships {
+        height: 100vh;
+    }
+}
+
+.memberships .contenedor h2 {
+    color: var(--colorBlanco);
+    opacity: .9;
+    margin: 4rem;
+    font-weight: 400;
+    transform: translateY(40%);
+    transition: 2s ease-out;
+    text-align: center;
+}
+.memberships .contenedor h2:hover {
+    background-color: var(--colorMrBots);
+}
+.memberships .contenedor h2.margen {
+    transform: translateY(0%);
+}
+.memberships__container {
+    display: grid;
+    column-gap: 4rem;
+    /* height: 100%; */
+}
+
+@media (min-width: 768px) {
+    .memberships__container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.memberships__items {
+    background-color: var(--dark);
+    border-radius: .4rem;
+    height: 40rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    transition: 1s ease-out;
+    margin-bottom: 4rem;
+}
+
+.memberships__items.active {
+    background: var(--degradado);
+}
+
+@media (min-width: 768px) {
+    .memberships__items {
+        margin-bottom: 0;
+    }
+    
+}
+
+.memberships__items h4 {
+    color: var(--colorBlanco);
+    font-size: 2rem;
+    opacity: .9;
+}
+.memberships__items-icon {
+    width: 5rem;
+    height: 5rem;
+}
+.memberships__items-icon img {
+    width: 100%;
+    height: 100%;
+}
+.memberships__items span {
+    color: var(--colorBlanco);
+    opacity: .7;
+}
+
+.memberships__btn {
+    background-color: var(--colorMrBots);
+    padding: 1rem 2rem;
+    color: var(--colorBlanco);
+    border-radius: .3rem;
+}
+
+.memberships__btn.active {
+    background-color: var(--dark);
+}
+
+.memberships__items:nth-child(1) {
+    transform: translateY(40%);
+}
+
+.memberships__items:nth-child(2) {
+    transform: translateY(60%);
+}
+.memberships__items:nth-child(3) {
+    transform: translateY(80%);
+}
+
+.memberships__items.margen {
+    transform: translateY(0%);
+}
+
+.memberships__items:hover {
+    transform: scale(1.1);
+    /* margin-top: 10rem; */
+}
